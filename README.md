@@ -9,6 +9,6 @@ this is the only place i'll post 999dice related code.
 
 note the date, it should be the oldest one in case any joker clones this too.
 
-if you can't read code and see someone else posting links that have long chunks of code that don't look like english stay away, it's probably not good for you.
+if you can't read code and see someone else posting links that have long chunks that don't look like english stay away, it's probably not good for you.
 
 beer piggybank: 17EqPZdWGZe2MzRMFyNsDevFM3744VdxgK
