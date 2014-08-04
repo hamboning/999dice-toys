@@ -1,3 +1,8 @@
+/*	you know the drill
+	open up the browser console (ctrl + shift + i) and paste everything you see here, even comments if you want.
+	usage: click a user ID and the ignore command will show up. click the id again to hide the command. simple stuff
+	have fun
+*/
 $('head').append('<style type="text/css">'+
 	'.ChatUserID:hover { cursor: pointer; } '+
 	'.ChatUserID-ignore { color: red; } '+
