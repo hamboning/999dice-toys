@@ -6,7 +6,7 @@
 
 	var audio = {};
 	audio["alert"] = new Audio();
-	audio["alert"].src = "no audio link for now";
+	audio["alert"].src = "https://cdn.rawgit.com/hamboning/999dice-toys/master/codec.wav";
 
 	function soundz() {
 		audio["alert"].play();
