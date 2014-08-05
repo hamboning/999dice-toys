@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name        999dice rain alert
-// @include     http*://www.999dice.com
 // should work with script/tamper/violent monkeys, other userscript tools
 // ==/UserScript==
 
+
+if (location.hostname == 'www.999dice.com') {
 	var audio = {};
 	audio["alert"] = new Audio();
 	audio["alert"].src = "https://cdn.rawgit.com/hamboning/999dice-toys/master/codec.wav";
@@ -24,3 +25,4 @@
 		if (( checkRain ) || ( soundtest ))
 				{ soundz(); }
 	});	
+}
