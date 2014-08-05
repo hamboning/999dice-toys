@@ -421,3 +421,13 @@ Small Device Styles
   }
 
 }
+
+#main_content a { 	
+  -webkit-transition: color 250ms;
+	-o-transition: color 250ms;
+	transition: color 250ms; 
+} 
+#main_content a:hover {
+  text-decoration: none;
+  color: #ffa500;
+}
