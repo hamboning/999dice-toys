@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name          999dice rain alert
-// @namespace     www.999dice.com
+// @name        999dice rain alert
+// @include     http*://www.999dice.com
 // should work with script/tamper/violent monkeys, other userscript tools
-
+// ==/UserScript==
 
 	var audio = {};
 	audio["alert"] = new Audio();
