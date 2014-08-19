@@ -24,7 +24,7 @@ if (location.hostname == 'www.999dice.com') {
 		BtcRainButton = crtButton.text();
 	
 		checkRain = (/BTC/i.test(BtcRainButton));
-		soundtest = (/Ancient Psychic TandeasdasdElephant/i.test(lastmsg));
+		soundtest = (/Ancient Psychic Tandem War Elephant/i.test(lastmsg));
 		
 		if ((( checkRain ) || ( soundtest )) && (crtButton.get(0) != window['last_button']))
 			{
