@@ -13,17 +13,23 @@ if (location.hostname == 'www.999dice.com') {
 		window.audio["alert"].play();
 		return false;
 	} 
+
+	window['last_button'] = null;
 	
 	$("#ChatTabChatContainer").bind("DOMSubtreeModified",function(){
 		el = $(this);
 	
 		lastmsg = el.children().last('.ChatText').text();
-		BtcRainButton = el.children().last('.ChatText').find('.TextButton').text();
+		var crtButton = el.children().last('.ChatText').find('.TextButton');
+		BtcRainButton = crtButton.text();
 	
 		checkRain = (/BTC/i.test(BtcRainButton));
 		soundtest = (/Ancient Psychic Tandem War Elephant/i.test(lastmsg));
 		
-		if (( checkRain ) || ( soundtest ))
-			{ soundz(); }
+		if ((( checkRain ) || ( soundtest )) && (crtButton.get(0) != window['last_button']))
+			{
+				window['last_button'] = crtButton.get(0);
+				soundz();
+			}
 	});	
 }
