@@ -23,10 +23,11 @@ if (location.hostname == 'www.999dice.com') {
 		var crtButton = el.children().last('.ChatText').find('.TextButton');
 		BtcRainButton = crtButton.text();
 	
-		checkRain = (/BTC/i.test(BtcRainButton));
+		checkRain = (/BTC\/DOGE/i.test(BtcRainButton));
+		checkRainx = (/BTC \/ DOGE/i.test(BtcRainButton));
 		soundtest = (/Ancient Psychic Tandem War Elephant/i.test(lastmsg));
 		
-		if ((( checkRain ) || ( soundtest )) && (crtButton.get(0) != window['last_button']))
+		if ((( checkRain ) || ( checkRainx ) || ( soundtest )) && (crtButton.get(0) != window['last_button']))
 			{
 				window['last_button'] = crtButton.get(0);
 				soundz();
