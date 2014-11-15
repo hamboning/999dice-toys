@@ -11,6 +11,7 @@ if (location.hostname == 'www.999dice.com') {
 		audio["alert"] = new Audio();
 		audio["alert"].src = "https://cdn.rawgit.com/hamboning/999dice-toys/master/codec.wav";
 		window.audio["alert"].play();
+		console.log(Date($.now()));
 		return false;
 	} 
 
