@@ -13,6 +13,10 @@ if (location.hostname == 'www.999dice.com') {
 		window.audio["alert"].play();
 		console.log(Date($.now()));
 		return false;
+<<<<<<< HEAD
+=======
+		
+>>>>>>> master
 	} 
 
 	window['last_button'] = null;
@@ -34,4 +38,5 @@ if (location.hostname == 'www.999dice.com') {
 				soundz();
 			}
 	});	
+	
 }
